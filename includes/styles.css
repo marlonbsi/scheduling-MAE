@@ -1,0 +1,387 @@
+/*GERAL*/
+    *{ font-family: Verdana, Helvetica, sans-serif; }
+    body{ margin: 0; padding: 0;}
+    a:link, a:visited{
+      color: #7e3d2c !important;
+      text-decoration: none !important;
+    }
+    a:hover{
+      color: #1a323b !important;
+      opacity: 0.75 !important;
+    }
+/*FIM DO GERAL*/
+/*CABEÇALHOS DAS PÁGINAS*/
+    #areaForm{
+      max-width: 920px;
+      border-style: solid;
+      border-color: #ca6146;
+      border-width: 3px 0 3px 0;
+      margin: auto;
+      background-color: #FBEEE6;
+    }
+    #btnMenu{
+      width: 100%;
+      height: 85px;
+      margin-bottom: 15px;
+    }
+    #linkAdm{ float: left; }
+    #linkAdm, #linkAcoes, #linkAgenda, #linkLista{
+      max-width: 70px;
+      margin: 5px 15px 5px 15px;
+      text-align: center;
+    }
+    #linkAdm img{
+      max-width: 50px;
+      margin: auto;
+    }
+    #linkAdm figcaption, #linkAcoes figcaption, #linkAgenda figcaption, #linkLista figcaption{
+      margin-top: 5px;
+      font-size: 0.75em;
+    }
+    #linkAcoes, #linkAgenda, #linkLista{ float: right; }
+    #linkAcoes img, #linkAgenda img, #linkLista img{ max-width: 48px; }
+    #btnLogin, #btnLogout{ width: 100%; }
+    #btnAlterar, #btnRegistro, #btnAgenda, #btnLista{ margin: auto; }
+    .tituloPag{
+      background-color: #faba76;
+      width: 100%;
+      min-height: 2em;
+      text-align: center;
+      margin: auto;
+      border-style: solid;
+      border-color: #ca6146;
+      border-width: 2px 0 0 0;
+    }
+    .tituloPag p{
+      margin: auto;
+      margin-bottom: 30px;
+      padding: 15px 0 15px 0;
+      font-size: 1.4em;
+      color: #7e3d2c;
+    }
+    /*ÁREA DE MENSAGENS*/
+        #areaMsgs .msgSucesso, #areaMsgs .msgErro{
+          font-size: 0.75em;
+          text-align: center;
+          margin-left: 15px;
+          margin-right: 15px;
+          padding: 5px;
+          vertical-align: middle;
+        }
+        #areaMsgs .msgSucesso{ background-color: #c8d969; }
+        #areaMsgs .msgErro{ background-color: #f8cccc; }
+        .msgSucesso{
+          background-color: #c8d969;
+          padding-bottom: 20px;
+        }
+        .msgErro{
+          background-color: #f8cccc;
+          padding-bottom: 20px;
+        }
+        #areaMsgs p{ border: 0;}
+        #espacoDiv{ width: 100%; height: 25px; }
+        #espacoDivForm{ width: 100%; float:left; height: 25px; }
+        #bemVindo{
+          border-top: 2px solid #ca6146;
+          font-size: 0.9em;
+          color: #1a323b;
+          height: 28px;
+          width: 100%;
+        }
+        #bemVindoMsg{
+          width: 74%;
+          margin-top: 15px;
+          margin-bottom: 15px !important;
+          margin-left: 2%;
+          float: left;
+        }
+        #bemVindoSair{
+          width: 15%;
+          margin-top: 15px;
+          margin-bottom: 15px !important;
+          margin-right: 4.5%;
+          float: right;
+          text-align: right;
+        }
+    /*FIM DA ÁREA DE MENSAGENS*/
+/*FIM DOS CABEÇALHOS*/
+
+/*TABELA COM A LISTA DE AGENDAMENTOS (agendamentoList.php)*/
+    #tbAgendamentos{
+      width: 100%;
+      margin: auto;
+      margin-top: -30px;
+      border: 0;
+      font-size: 0.9em;
+      border-collapse: collapse;
+    }
+    #tbAgendamentos th{ padding: 10px; }
+    #tbAgendamentos td{ padding: 3px; }
+    .trH{
+      height: 35px;
+      background-color: #faba76;
+      border-top: 1px solid #ca6146;
+    }
+    .trDia{
+      height: 35px;
+      background-color: #fbeee6;
+    }
+    .trA, .trB{ height: 32px; }
+    .trA{ background-color: #fff; }
+    .trB{ background-color: #cdf; }
+    .tdPessoas, .tdNum, .tdHora, .tdAtivo, .tdEntrada, .tdPeriodo, .tdVagas{ text-align: center; }
+    .tdDia{
+      font-weight: bolder;
+      text-align: center;
+    }
+    .tdNum, .tdHora{ width: 82px; }
+    .tdPessoas{ width: 42px; }
+    .tdAcoes{ width: 70px; }
+    .tdAcoesUs{ width: 100px; }
+    .tdAcoesH{ width: 150px; }
+    .tdEmail{
+      max-width: 180px;
+      word-wrap: break-word;
+    }
+    .btnAcoes{
+      max-width: 1.5em;
+      margin: auto;
+    }
+    .btnEdit, .btnExcluirUs, .btnExcluirH{ margin-left: 7px;}
+    #btnOn, #btnOff{ margin: 4px auto; }
+/*FIM DA TABELA*/
+
+/*FORMULÁRIOS*/
+    #formIndex, #formAgendamento, #formLogin{
+      max-width: 90%;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+    .relatoriosForm{
+      width: 75%;
+      height: 100%;
+      float: left;
+      margin-left: 10px;
+    }
+    #formIndex #campoData{
+      width: 50%;
+      margin: auto;
+    }
+    #diaInput{
+      width: 100%;
+      text-align: center;
+      cursor: pointer;
+    }
+    #diaInput2, #horarioInput2{
+      margin-top: 10px;
+      width: 90%;
+      text-align: center;
+      cursor: pointer;
+    }
+    #numPessoasInputReg, #horarioInputReg, #campoSenha2, #confSenha2, #horarioEntrada, #horarioDuracao, #horarioVagas{
+      width: 90%;
+      text-align: center;
+    }
+    #campoEmail, #campoSenha, #campoCodigo, #campoTelefone, #campoNomeUs{ text-align: center; }
+    .campoForm{
+      width: 80%;
+      margin: auto;
+      color: #ca6146;
+    }
+    .campoForm2{
+      width: 50%;
+      float: left;
+    }
+    .campoForm2 input[type="checkbox"]{ margin-left: 25px; }
+    .campoTermos{
+      margin-top: 30px;
+      width: 100%;
+      text-align: center;
+    }
+    .campoForm input[type="text"], .campoForm input[type="date"], .campoForm input[type="password"],
+      .campoForm input[type="number"], .campoForm select{ width: 100%; }
+    .campoForm input[type=checkbox] { transform: scale(1.5); }
+    .campoForm label{ margin-right: 25px;}
+    .campoForm input[type="radio"]{ margin: 0 10px 0 25px; }
+    .formObs{
+      width: 100%;
+      text-align: center;
+      color: #ca6146;
+      font-size: 0.9em;
+      margin: 7px auto;
+    }
+    #txtTermos{
+      width: 100%;
+      text-align: justify;
+      color: #7e3d2c;
+      font-size: 0.75em;
+      margin-top: 7px;
+      float: left;
+      background-color: #fff;
+      border: none;
+      border-bottom: 2px solid #ca6146;
+    }
+    #txtTermos h3{ text-align: center; }
+    #botoesForm{
+      width: 100%;
+      margin: auto;
+    }
+    #btnProximo, #btnSolicitar, #btnVoltar, #btnEntrar, #btnAlterar, #btnCancelar{
+      width: 50%;
+      height: 2em;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      margin-left: 25%;
+      background-image: linear-gradient(to right, #faba76, #ca6146);
+      color: #4b241a;
+    }
+    .relCampoInput{
+      text-align: center;
+      margin-left: 10px;
+      height: 1.2em;
+      width: 300px;
+      font-size: 1em;
+    }
+    .relCampoInput2{
+      text-align: center;
+      margin-left: 10px;
+      height: 1.2em;
+      width: 120px;
+      font-size: 1em;
+    }
+    .btnConsultar{
+      margin: 0 0 0 15px;
+      width: 130px;
+      height: 1.5em;
+      background-image: linear-gradient(to right, #faba76, #ca6146);
+      color: #4b241a;
+    }
+    .disabled{ color: #989; }
+    /*FORMULÁRIOS TAGS*/
+        input[type="text"]:focus, input[type="date"]:focus, input[type="number"]:focus,
+          input[type="password"]:focus, select:focus, select:hover, select:active{
+          background-color: #ddffff;
+          border: none;
+          border-bottom: 2px solid #ca6146;
+        }
+        input[type="number"]{ text-align: center; }
+        input[type="submit"]:hover, input[type="button"]:hover{
+          opacity: 0.9;
+          color: #1a323b;
+        }
+        label{
+          color: #ca6146;
+          font-size: 1.2em;
+          text-align: left;
+        }
+        input, select{
+          font-size: 1.2em;
+          border: none;
+          border-bottom: 1.5px solid #ca6146;
+          background-color: #fff;
+          margin-top: 5px;
+        }
+        select{ min-height: 1.2em; }
+        select option{
+          vertical-align: bottom;
+          text-align: center;
+        }
+    /*FIM DAS TAGS DE FORMULÁRIO*/
+/*FIM DOS FORMULÁRIOS*/
+
+/*PÁGINAS DE RETORNO DE MENSAGENS*/
+    .msgErro, .msgSucesso{
+      margin: 25px auto;
+      text-align: center;
+      font-size: 1.2em;
+      border-style: solid;
+      border-color: #ca6146;
+      border-width: 2px 0 0 0;
+      padding-top: 15px;
+    }
+    .msgErro{ color: #a00; }
+    .msgSucesso{ color: #1a323b; }
+    .msgErro img{ max-height: 1.2em; }
+    .msgSucesso img{ max-height: 1.2em; }
+/*FIM DO RETORNO DE MENSAGENS*/
+
+/*ÁREA DE CONFIGURAÇÕES*/
+  #configLinks{
+    margin: auto;
+    width: 600px;
+    min-height: 300px;
+  }
+  #configLinks p{
+    color: #ca6146;
+    font-size: 1.3em;
+    line-height: 1.5em;
+  }
+  .configBtns{
+    width: 200px;
+    height: 220px;
+    cursor: pointer;
+    float: left;
+  }
+  .configBtns:hover{ background: #fff; }
+  .configBtns figcaption{ text-align: center;}
+  .btnConfiguracoes{
+    height: 150px;
+    margin: 15px 25px;
+    text-align: center;
+  }
+  #tituloOp, #tituloH{
+    width: 818px; /*Tem que deixar com 1px de espaço para funcionar no Firefox*/
+    height: 80px;
+    text-align: center;
+    float: left;
+    margin: auto;
+    background-color: #faba76;
+    border-style: solid;
+    border-color: #ca6146;
+    border-width: 0 1px 0 0;
+    padding: 15px 0 5px 0;
+  }
+  #tituloOp p, #tituloH p{ margin-top: 10px; }
+  #linkNovoOp, #linkNovoH{
+    width: 100px;
+    height: 80px;
+    float: left;
+    margin: 0;
+    /* background-color: #FBEEE6; */
+    background-color: #faba76;
+    padding: 10px 0 10px 0;
+  }
+  #linkNovoOp img, #linkNovoH img{
+    max-width: 40px;
+    max-height: 40px;
+    margin: auto;
+    padding-top: 8px;
+  }
+  #linkNovoOp figcaption, #linkNovoH figcaption{ margin-top: 8px; }
+  .tipoRelatorio{
+    width: 22%;
+    height: 100%;
+    float: left;
+    padding: 3px 0 0 15px;
+    color: #ca6146;
+    font-size: 1.2em;
+    text-align: left;
+  }
+  .linhaTipoRelatorio{
+    width: 100%;
+    height: 40px;
+  }
+  .labelRelatorio{
+    width: 100px;
+    float: left;
+    padding-top: 3px;
+  }
+  .tituloRel{
+    min-height: 70px;
+  }
+  .tituloRel p{
+    margin-left: 25px;
+    font-size: 1.25em;
+    color: #7e3d2c;
+  }
+/*FIM DA ÁREA DE CONFIGURAÇÕES*/
